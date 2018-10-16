@@ -1,9 +1,8 @@
 def roll_call_dwarves(array) # code an argument here
   # Your code here
   counter = 1
-  array.each do |name|
-    puts "#{counter}. #{name}"
-    counter += 1
+  array.each_with_index do |name, index|
+    puts "#{index + 1}. #{name}"
   end
 end
 
